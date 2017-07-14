@@ -10,14 +10,20 @@ public class LoginController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
 	
-	@RequestMapping("/pippo/topolino")
+	@RequestMapping("/notfiltered")
 	public String testLogin(){
 		LOGGER.info("Got it");
-		return "Authenticated";
+		return "Unprotected URI";
 	}
 	
-	@RequestMapping("/login/pippo/pluto")
-	public String filterMe(){
+	@RequestMapping("/filterme/test")
+	public String filterMeTest(){
+		LOGGER.info("Got it");
+		return "Filtering";
+	}
+	
+	@RequestMapping("/filterme/anothertest")
+	public String filterMeAnotherTest(){
 		LOGGER.info("Got it");
 		return "Filtering";
 	}
