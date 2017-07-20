@@ -13,13 +13,21 @@ public class AlarSecurityManager {
 
     public void setAuthenticated(SecurityContext context) {
         ContextHolder.setContext(context);
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+        getHttpRequest().getSession().setAttribute(CONTEXT_ATTRIBUTE, context);
+    }
+    
+    public void updateContext(SecurityContext context) {
+        ContextHolder.setContext(context);
+        HttpServletRequest request = getHttpRequest();
+        request.getSession().removeAttribute(CONTEXT_ATTRIBUTE);
         request.getSession().setAttribute(CONTEXT_ATTRIBUTE, context);
     }
 
     public void unauthenticate() {
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
-        request.getSession().removeAttribute(CONTEXT_ATTRIBUTE);
+    	getHttpRequest().getSession().removeAttribute(CONTEXT_ATTRIBUTE);
     }
-
+    
+    private HttpServletRequest getHttpRequest() {
+    	return ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+    }
 }

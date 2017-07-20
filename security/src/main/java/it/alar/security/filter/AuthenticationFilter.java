@@ -60,7 +60,7 @@ public class AuthenticationFilter implements Filter {
 		boolean unauthorized = false;
 		for (String filteredUrl : filteredUrls) {
 			if (!filteredUrl.isEmpty()) {
-				StringBuilder url = new StringBuilder(httpServletRequest.getContextPath()).append(filteredUrl);
+				StringBuilder url = new StringBuilder(httpServletRequest.getContextPath()).append(filteredUrl.trim());
 				if (pathMacher.match(url.toString(), httpServletRequest.getRequestURI())) {
 					if (httpServletRequest.getSession().getAttribute(AlarSecurityManager.CONTEXT_ATTRIBUTE) != null) {
 						SecurityContext context = (SecurityContext) httpServletRequest.getSession()
