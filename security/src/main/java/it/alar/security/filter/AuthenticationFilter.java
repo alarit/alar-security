@@ -38,14 +38,6 @@ public class AuthenticationFilter implements Filter {
 
 	@Override
 	public void init(final FilterConfig filterConfig) throws ServletException {
-		System.out.println("   _____   ____       _____ __________ ");
-		System.out.println("  /  _  \\ |    |     /  _  \\\\______   \\");
-		System.out.println(" /  /_\\  \\|    |    /  /_\\  \\|       _/");
-		System.out.println("/    |    \\    |___/    |    \\    |   \\");
-		System.out.println("\\____|__  /_______ \\____|__  /____|_  /");
-		System.out.println("        \\/        \\/       \\/       \\/ ");
-		System.out.println(" :: Alar security :: v.1.0.0b");
-		
 		StringBuilder sb = new StringBuilder("Filtering following Urls: ");
 		sb.append(filteredUrls);
 		LOGGER.info(sb.toString());
