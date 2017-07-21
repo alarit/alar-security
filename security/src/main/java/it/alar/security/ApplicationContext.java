@@ -20,7 +20,7 @@
 package it.alar.security;
 
 /**
- *	@author Alessandro Arici
+ *  @author Alessandro Arici
  *  @since 1.0
  */
 

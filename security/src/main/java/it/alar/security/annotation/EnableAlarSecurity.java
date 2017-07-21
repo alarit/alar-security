@@ -20,7 +20,7 @@
 package it.alar.security.annotation;
 
 /**
- *	@author Alessandro Arici
+ *  @author Alessandro Arici
  *  @since 1.0
  */
 
