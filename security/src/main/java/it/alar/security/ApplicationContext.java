@@ -19,11 +19,15 @@
 
 package it.alar.security;
 
+import java.util.Set;
+
 /**
  *  @author Alessandro Arici
  *  @since 1.0
  */
 
 public interface ApplicationContext {
+	
+	public Set<String> getRoles();
 
 }

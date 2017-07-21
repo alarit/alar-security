@@ -17,15 +17,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package it.alar.security;
+package it.alar.security.hasrole;
 
 /**
  *  @author Alessandro Arici
  *  @since 1.0
  */
 
-public class InvalidTokenException extends Exception {
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-	private static final long serialVersionUID = 1L;
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface HasRole {
 
+	public String value();
 }
