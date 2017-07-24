@@ -28,6 +28,7 @@ import java.util.Set;
 
 public interface ApplicationContext {
 	
-	public Set<String> getRoles();
+	void setRoles(Set<String> roles);
+	Set<String> getRoles();
 
 }

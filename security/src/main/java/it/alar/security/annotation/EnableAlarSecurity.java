@@ -33,10 +33,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 import it.alar.security.AlarSecurityManager;
 import it.alar.security.filter.AuthenticationFilter;
+import it.alar.security.hasrole.HasRoleInterceptor;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@ComponentScan(basePackageClasses = {AlarSecurityManager.class, AuthenticationFilter.class})
+@ComponentScan(basePackageClasses = {AlarSecurityManager.class, AuthenticationFilter.class, HasRoleInterceptor.class})
 public @interface EnableAlarSecurity {
 
 }
