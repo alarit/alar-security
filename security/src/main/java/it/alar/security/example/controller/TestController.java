@@ -13,7 +13,7 @@ public class TestController {
 	@Autowired
 	private CurrentUser currentUser;
 	
-	@HasRole("B")
+	@HasRole("A")
 	@GetMapping("/filterme/admin")
 	public String admin(){
 		return "Hi admin!";

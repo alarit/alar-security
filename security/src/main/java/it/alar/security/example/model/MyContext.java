@@ -2,9 +2,7 @@ package it.alar.security.example.model;
 
 import java.util.Set;
 
-import it.alar.security.ApplicationContext;
-
-public class MyContext implements ApplicationContext {
+public class MyContext extends AbstractApplicationContext {
 
 	private String username;
 	private Set<String> roles;
@@ -23,9 +21,7 @@ public class MyContext implements ApplicationContext {
 		return roles;
 	}
 
-	@Override
 	public void setRoles(Set<String> roles) {
 		this.roles = roles;
 	}
-
 }

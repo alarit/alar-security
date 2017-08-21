@@ -19,6 +19,8 @@
 
 package it.alar.security;
 
+import it.alar.security.example.model.ApplicationContext;
+
 /**
  *  @author Alessandro Arici
  *  @since 1.0

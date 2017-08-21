@@ -28,8 +28,8 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
-import it.alar.security.ApplicationContext;
 import it.alar.security.ContextHolder;
+import it.alar.security.example.model.ApplicationContext;
 
 /**
  *  @author Alessandro Arici

@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package it.alar.security;
+package it.alar.security.example.model;
 
 import java.util.Set;
 
@@ -28,7 +28,5 @@ import java.util.Set;
 
 public interface ApplicationContext {
 	
-	void setRoles(Set<String> roles);
 	Set<String> getRoles();
-
 }
