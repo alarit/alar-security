@@ -2,4 +2,8 @@
 
 RemoteSystemsTempFiles/
 .settings
+.project
+.classpath
+.recommenders/
+.sonarlint/
 target/
