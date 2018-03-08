@@ -1,9 +1,9 @@
-package it.alar.security.example.model;
+package it.alar.security.model;
 
 import java.util.HashSet;
 import java.util.Set;
 
-abstract class AbstractApplicationContext implements ApplicationContext {
+public abstract class AbstractApplicationContext implements ApplicationContext {
 
 	@Override
 	public Set<String> getRoles() {

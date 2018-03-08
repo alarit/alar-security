@@ -29,7 +29,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
 import it.alar.security.ContextHolder;
-import it.alar.security.example.model.ApplicationContext;
+import it.alar.security.model.ApplicationContext;
 
 /**
  *  @author Alessandro Arici

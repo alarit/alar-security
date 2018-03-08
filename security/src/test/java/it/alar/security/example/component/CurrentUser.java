@@ -3,7 +3,7 @@ package it.alar.security.example.component;
 import org.springframework.stereotype.Component;
 
 import it.alar.security.ContextHolder;
-import it.alar.security.example.model.MyContext;
+import it.alar.security.model.MyContext;
 
 @Component
 public class CurrentUser {

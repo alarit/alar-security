@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package it.alar.security.example.model;
+package it.alar.security.model;
 
 import java.util.Set;
 

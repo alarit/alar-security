@@ -1,4 +1,4 @@
-package it.alar.security.example.model;
+package it.alar.security.model;
 
 import java.util.Set;
 

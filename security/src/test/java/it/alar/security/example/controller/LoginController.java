@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import it.alar.security.AlarSecurityManager;
 import it.alar.security.SecurityContext;
-import it.alar.security.example.model.MyContext;
+import it.alar.security.model.MyContext;
 
 @RestController
 public class LoginController {
